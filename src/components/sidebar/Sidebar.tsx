@@ -17,7 +17,6 @@ const Sidebar = () => {
         <hr />
         <div className="center">
           <ul>
-            {/* <p className="title">Main</p> */}
             <li>
               <DashboardIcon className="icon" />
               <span>Home</span>
@@ -41,11 +40,6 @@ const Sidebar = () => {
                 <span>Ethereum</span>
               </li>
             </Link>
-            <p className="title">Account</p>
-            <li>
-              <ExitToAppIcon className="icon" />
-              <span>Logout</span>
-            </li>
           </ul>
         </div>
       </div>
