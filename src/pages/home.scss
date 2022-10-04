@@ -6,9 +6,9 @@
   
       .widgets,
       .charts {
-        display: flex;
+        display: grid;
         padding: 20px;
-        gap: 20px;
+        gap: 3;
       }
   
       .charts {
