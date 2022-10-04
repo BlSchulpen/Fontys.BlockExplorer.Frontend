@@ -10,8 +10,8 @@ const Home = () => {
         <div className="home">
             <Sidebar />
             <div className="homeContainer">
-                <Grid container spacing={3}>
-                    <Grid xs={4}>
+                <Grid container columns={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 3 }}>
+                    <Grid >
                         <div className="listContainer">
                             <div className="listBox">
                                 <FaBitcoin className="icon" color={BtcOrange} />
@@ -23,8 +23,8 @@ const Home = () => {
                             <Table />
                         </div>
                     </Grid>
-                    <Grid xs={4}>
-                    <div className="listContainer">
+                    <Grid >
+                        <div className="listContainer">
                             <div className="listBox">
                                 <SiBitcoincash className="icon" color={BchGreen} />
                                 <div className="listTitle">
@@ -35,8 +35,8 @@ const Home = () => {
                             <Table />
                         </div>
                     </Grid>
-                    <Grid xs={4}>
-                    <div className="listContainer">
+                    <Grid >
+                        <div className="listContainer">
                             <div className="listBox">
                                 <FaEthereum className="icon" color={EthPurple} />
                                 <div className="listTitle">

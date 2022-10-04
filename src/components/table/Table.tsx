@@ -22,7 +22,7 @@ const rows = [
 
 const Table = () => {
     return (
-        <MatTable aria-label="simple table" >
+        <MatTable aria-label="simple table" className="table" >
             <TableHead>
                 <TableRow>
                     <TableCell className="tableCell">Number</TableCell>
