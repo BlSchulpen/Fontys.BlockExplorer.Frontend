@@ -25,7 +25,8 @@ const Table = () => {
         <MatTable aria-label="simple table" className="table" >
             <TableHead>
                 <TableRow>
-                    <TableCell className="tableCell">Number</TableCell>
+                    <TableCell className="tableCell">
+                        Number</TableCell>
                     <TableCell className="tableCell">Time</TableCell>
                     <TableCell className="tableCell">Value</TableCell>
                 </TableRow>

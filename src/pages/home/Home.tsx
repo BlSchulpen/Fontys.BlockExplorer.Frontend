@@ -1,8 +1,8 @@
-import Sidebar from "../components/sidebar/Sidebar";
-import Table from "../components/table/Table";
+import Sidebar from "../../components/sidebar/Sidebar";
+import Table from "../../components/table/Table";
 import "./home.scss";
 import Grid from '@mui/material/Grid';
-import { BtcOrange, BchGreen, EthPurple } from '../colors'
+import { BtcOrange, BchGreen, EthPurple } from '../../colors'
 import { FaBitcoin, FaEthereum } from 'react-icons/fa';
 import { SiBitcoincash } from 'react-icons/si';
 const Home = () => {
