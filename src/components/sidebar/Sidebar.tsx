@@ -5,6 +5,7 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import { FaBitcoin, FaEthereum } from 'react-icons/fa';
 import { SiBitcoincash } from 'react-icons/si';
 import { Link } from "react-router-dom";
+import { BtcOrange,BchGreen,EthPurple } from '../../colors'
 
 const Sidebar = () => {
     return (
@@ -24,19 +25,19 @@ const Sidebar = () => {
             <p className="title">Coins</p>
             <Link to="/users" style={{ textDecoration: "none" }}>
               <li>
-              <FaBitcoin className="icon"  />
+              <FaBitcoin className="icon" color={BtcOrange} />
                 <span>Bitcoin</span>
               </li>
             </Link>
             <Link to="/users" style={{ textDecoration: "none" }}>
               <li>
-                <SiBitcoincash className="icon"  />
+                <SiBitcoincash className="icon" color={BchGreen}   />
                 <span>Bitcoin Cash</span>
               </li>
             </Link>
             <Link to="/users" style={{ textDecoration: "none" }}>
               <li>
-                <FaEthereum className="icon" />
+                <FaEthereum className="icon" color={EthPurple} />
                 <span>Ethereum</span>
               </li>
             </Link>
