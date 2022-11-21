@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaChartPie, FaHome, FaMoneyBill } from 'react-icons/fa';
 
 function SidebarMainCategory() {
     return (

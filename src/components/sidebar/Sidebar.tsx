@@ -1,19 +1,17 @@
 import "./sidebar.scss";
-import { FaBitcoin, FaChartPie, FaEthereum, FaHome, FaMoneyBill } from 'react-icons/fa';
-import { SiBitcoincash } from 'react-icons/si';
-import { Link } from "react-router-dom";
-import { BtcOrange, BchGreen, EthPurple } from '../../colors'
-import SidebarTitle from './sidebar-title/SidebarTitle'; 
+import SidebarTitle from './sidebar-title/SidebarTitle';
 import SidebarMainCategory from "./sidebar-main-category/SidebarMainCategory";
-import SidebarContent from "./sidebar-content/SidebarContent";
+import SidebarCoinCategory from "./sidebar-coin-category/SidebarCoinCategory";
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <SidebarTitle />
-      <div className="center">
-        <SidebarContent/>
-      </div>
+      <ul >
+        <SidebarMainCategory />
+        <hr />
+        <SidebarCoinCategory />
+      </ul>
     </div>
   );
 };

@@ -1,4 +1,5 @@
-import Sidebar from "../../components/sidebar/Sidebar";
+//import Sidebar from "../../components/sidebar/Sidebar";
+import SimpleBottomNavigation from "../../components/appbar/Sidebar";
 import Table from "../../components/table/Table";
 import "./home.scss";
 import Grid from '@mui/material/Grid';
@@ -8,7 +9,7 @@ import { SiBitcoincash } from 'react-icons/si';
 const Home = () => {
     return (
         <div className="home">
-            <Sidebar />
+            <SimpleBottomNavigation />
             <div className="homeContainer">
                 <Grid container columns={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 3 }}>
                     <Grid >

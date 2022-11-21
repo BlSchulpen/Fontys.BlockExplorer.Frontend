@@ -1,6 +1,11 @@
-function SidebarContent() {
+import { Link } from "react-router-dom";
+import { FaBitcoin, FaEthereum } from 'react-icons/fa';
+import { SiBitcoincash } from 'react-icons/si';
+import { BtcOrange, BchGreen, EthPurple } from '../../../colors'
+
+function SidebarCoinCategory() {
     return (
-        <ul>
+        <div>
             <p className="title">Coins</p>
             <Link to="/btc" style={{ textDecoration: "none" }}>
                 <li>
@@ -20,8 +25,8 @@ function SidebarContent() {
                     <span>Ethereum</span>
                 </li>
             </Link>
-        </ul>
+        </div>
     )
-};
+}
 
-export default SidebarContent;
+export default SidebarCoinCategory
