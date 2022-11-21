@@ -1,15 +1,10 @@
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import { Link } from "react-router-dom";
 import { FaChartPie, FaHome, FaMoneyBill } from 'react-icons/fa';
+import sidebarStyle from '../sidebar-style';
 import "./sidebar-main-category.scss";
 
 function SidebarMainCategory() {
@@ -21,7 +16,7 @@ function SidebarMainCategory() {
               <ListItemIcon>
                 <FaHome className="icon" />
               </ListItemIcon>
-              <ListItemText primary="Home" />
+              <ListItemText primaryTypographyProps={{ style: sidebarStyle.main}} primary="Home" />
             </ListItemButton>
           </ListItem>
        
@@ -30,7 +25,7 @@ function SidebarMainCategory() {
               <ListItemIcon>
                 <FaMoneyBill className="icon" />
               </ListItemIcon>
-              <ListItemText primary="Prices" />
+              <ListItemText primaryTypographyProps={{ style: sidebarStyle.main}} primary="Prices" />
             </ListItemButton>
           </ListItem>
 
@@ -39,7 +34,7 @@ function SidebarMainCategory() {
               <ListItemIcon>
                 <FaChartPie className="icon" />
               </ListItemIcon>
-              <ListItemText primary="Charts" />
+              <ListItemText primaryTypographyProps={{ style: sidebarStyle.main}} primary="Charts" />
             </ListItemButton>
           </ListItem>        
       </List>

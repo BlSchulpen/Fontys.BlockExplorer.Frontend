@@ -6,6 +6,7 @@ import ListItemText from '@mui/material/ListItemText';
 import { FaBitcoin, FaEthereum } from 'react-icons/fa';
 import { SiBitcoincash } from 'react-icons/si';
 import { BtcOrange, BchGreen, EthPurple } from '../../../colors'
+import sidebarStyle from '../sidebar-style';
 
 function SidebarCoinCategory() {
     return (
@@ -15,7 +16,7 @@ function SidebarCoinCategory() {
           <ListItemIcon>
             <FaBitcoin className="icon" color={BtcOrange} />
           </ListItemIcon>
-          <ListItemText primary="Bitcoin" />
+          <ListItemText primaryTypographyProps={{ style: sidebarStyle.main}} primary="Bitcoin" />
         </ListItemButton>
       </ListItem>
    
@@ -24,7 +25,7 @@ function SidebarCoinCategory() {
           <ListItemIcon>
           <SiBitcoincash className="icon" color={BchGreen} />
           </ListItemIcon>
-          <ListItemText primary="Bitcoin cash" />
+          <ListItemText primaryTypographyProps={{ style: sidebarStyle.main}} primary="Bitcoin cash" />
         </ListItemButton>
       </ListItem>
 
@@ -33,7 +34,7 @@ function SidebarCoinCategory() {
           <ListItemIcon>
           <FaEthereum className="icon" color={EthPurple} />
           </ListItemIcon>
-          <ListItemText primary="Ethereum" />
+          <ListItemText primaryTypographyProps={{ style: sidebarStyle.main}} primary="Ethereum" />
         </ListItemButton>
       </ListItem>        
   </List>
