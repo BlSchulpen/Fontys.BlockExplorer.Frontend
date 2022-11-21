@@ -1,5 +1,5 @@
 //import Sidebar from "../../components/sidebar/Sidebar";
-import SimpleBottomNavigation from "../../components/appbar/Sidebar";
+import SimpleBottomNavigation from "../../components/sidebar/Sidebar";
 import Table from "../../components/table/Table";
 import "./home.scss";
 import Grid from '@mui/material/Grid';

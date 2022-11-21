@@ -1,28 +1,49 @@
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import MailIcon from '@mui/icons-material/Mail';
 import { Link } from "react-router-dom";
 import { FaChartPie, FaHome, FaMoneyBill } from 'react-icons/fa';
+import "./sidebar-main-category.scss";
 
 function SidebarMainCategory() {
     return (
-        <div>
-            <Link to="/home" style={{ textDecoration: "none" }}>
-                <li>
-                    <FaHome className="icon" />
-                    <span>Home</span>
-                </li>
-            </Link>
-            <Link to="/prices" style={{ textDecoration: "none" }}>
-                <li>
-                    <FaMoneyBill className="icon" />
-                    <span>Prices</span>
-                </li>
-            </Link>
-            <Link to="/charts" style={{ textDecoration: "none" }}>
-                <li>
-                    <FaChartPie className="icon" />
-                    <span>Charts</span>
-                </li>
-            </Link>
-        </div>
+      <div className='main-list-items'>
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton to="/home">
+              <ListItemIcon>
+                <FaHome className="icon" />
+              </ListItemIcon>
+              <ListItemText primary="Home" />
+            </ListItemButton>
+          </ListItem>
+       
+          <ListItem disablePadding>
+            <ListItemButton to="/prices">
+              <ListItemIcon>
+                <FaMoneyBill className="icon" />
+              </ListItemIcon>
+              <ListItemText primary="Prices" />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton to="/charts">
+              <ListItemIcon>
+                <FaChartPie className="icon" />
+              </ListItemIcon>
+              <ListItemText primary="Charts" />
+            </ListItemButton>
+          </ListItem>        
+      </List>
+      </div>
     )
 };
 

@@ -1,31 +1,42 @@
-import { Link } from "react-router-dom";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
 import { FaBitcoin, FaEthereum } from 'react-icons/fa';
 import { SiBitcoincash } from 'react-icons/si';
 import { BtcOrange, BchGreen, EthPurple } from '../../../colors'
 
 function SidebarCoinCategory() {
     return (
-        <div>
-            <p className="title">Coins</p>
-            <Link to="/btc" style={{ textDecoration: "none" }}>
-                <li>
-                    <FaBitcoin className="icon" color={BtcOrange} />
-                    <span>Bitcoin</span>
-                </li>
-            </Link>
-            <Link to="/bch" style={{ textDecoration: "none" }}>
-                <li>
-                    <SiBitcoincash className="icon" color={BchGreen} />
-                    <span>Bitcoin Cash</span>
-                </li>
-            </Link>
-            <Link to="/eth" style={{ textDecoration: "none" }}>
-                <li>
-                    <FaEthereum className="icon" color={EthPurple} />
-                    <span>Ethereum</span>
-                </li>
-            </Link>
-        </div>
+      <List>
+      <ListItem disablePadding>
+        <ListItemButton to="/btc">
+          <ListItemIcon>
+            <FaBitcoin className="icon" color={BtcOrange} />
+          </ListItemIcon>
+          <ListItemText primary="Bitcoin" />
+        </ListItemButton>
+      </ListItem>
+   
+      <ListItem disablePadding>
+        <ListItemButton to="/bch">
+          <ListItemIcon>
+          <SiBitcoincash className="icon" color={BchGreen} />
+          </ListItemIcon>
+          <ListItemText primary="Bitcoin cash" />
+        </ListItemButton>
+      </ListItem>
+
+      <ListItem disablePadding>
+        <ListItemButton to="/eth">
+          <ListItemIcon>
+          <FaEthereum className="icon" color={EthPurple} />
+          </ListItemIcon>
+          <ListItemText primary="Ethereum" />
+        </ListItemButton>
+      </ListItem>        
+  </List>
     )
 }
 
