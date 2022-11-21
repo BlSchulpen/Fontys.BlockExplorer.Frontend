@@ -4,13 +4,13 @@ import Divider from '@mui/material/Divider';
 import SidebarTitle from "./sidebar-title/SidebarTitle";
 import SidebarMainCategory from "./sidebar-main-category/SidebarMainCategory";
 import SidebarCoinCategory from "./sidebar-coin-category/SidebarCoinCategory";
-import "./sidebar.scss";
-
+import "./sidebar.scss"
 const drawerWidth = 240;
 
 
 function Sidebar() {
     return (
+      <div className='sidebar'>
         <Drawer
         variant="permanent"
         sx={{
@@ -26,6 +26,7 @@ function Sidebar() {
           <SidebarCoinCategory/>
         </Box>
       </Drawer>
+      </div>
     );
   };
   
