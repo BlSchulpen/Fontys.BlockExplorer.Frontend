@@ -6,7 +6,7 @@ import ListItemText from '@mui/material/ListItemText';
 import { FaBitcoin, FaEthereum } from 'react-icons/fa';
 import { SiBitcoincash } from 'react-icons/si';
 import { BtcOrange, BchGreen, EthPurple } from '../../../colors'
-import sidebarStyle from '../sidebar-style';
+import sidebarStyle from '../Sidebar-style';
 
 function SidebarCoinCategory() {
     return (

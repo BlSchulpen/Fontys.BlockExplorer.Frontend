@@ -9,6 +9,7 @@ import { FaBitcoin, FaEthereum } from 'react-icons/fa';
 import { SiBitcoincash } from 'react-icons/si';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import CoinBlockSummary from '../../components/coinblock-summary/Coinblock-summary';
 
 const Home = () => {
     const isMobile = useMediaQuery(useTheme().breakpoints.down('md'));
@@ -53,6 +54,9 @@ const Home = () => {
                             </div>
                             <Table />
                         </div>
+                    </Grid>
+                    <Grid>
+                        <CoinBlockSummary/>
                     </Grid>
                 </Grid>
             </div>

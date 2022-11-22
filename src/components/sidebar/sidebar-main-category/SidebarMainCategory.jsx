@@ -4,7 +4,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { FaChartPie, FaHome, FaMoneyBill } from 'react-icons/fa';
-import sidebarStyle from '../sidebar-style';
+import sidebarStyle from '../Sidebar-style';
 import "./sidebar-main-category.scss";
 
 function SidebarMainCategory() {

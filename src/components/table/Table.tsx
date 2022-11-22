@@ -1,4 +1,3 @@
-import "./table.scss";
 import MatTable from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -6,6 +5,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import { Component } from "react";
 import axios from 'axios';
+import "./table.scss";
 
 export default class Table extends Component{
     constructor(cointType: string) {
@@ -42,7 +42,7 @@ export default class Table extends Component{
         ];
 
         return (
-            <MatTable aria-label="simple table" className="table" >
+            <MatTable aria-label="simple table" className="mat-table" >
             <TableHead>
                 <TableRow>
                     <TableCell className="tableCell"> Number</TableCell>
