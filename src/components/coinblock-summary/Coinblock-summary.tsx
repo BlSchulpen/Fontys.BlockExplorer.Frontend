@@ -8,14 +8,15 @@ import { BtcOrange, BchGreen, EthPurple } from '../../colors'
 import { FaBitcoin, FaEthereum } from 'react-icons/fa';
 import Table from "../../components/table/Table";
 import "./coinblock-summary.scss";
-import CoinTitle from '../coin-title/CoinTitle';
+import CoinTitle from '../coin-card-title/CoinCardTitle';
+import { Coin } from '../../definitions/Coin';
 
-function CoinBlockSummary() {
+function CoinBlockSummary({coin}: {coin: Coin}) {
     return (
         <div className="Coinblock-summary">
         <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
-            <CoinTitle/>
+            <CoinTitle coin={coin} />
           <CardContent>
             <Table />
           </CardContent>
@@ -26,14 +27,3 @@ function CoinBlockSummary() {
   };
   
   export default CoinBlockSummary;
-
-
-  /*
-                          <div className="listBox">
-                                <FaEthereum className="icon" color={EthPurple} />
-                                <div className="listTitle">
-                                    <span className="heading">Latest block</span>
-                                    <p className="description">Ethereum</p>
-                                </div>
-                            </div>
-  */

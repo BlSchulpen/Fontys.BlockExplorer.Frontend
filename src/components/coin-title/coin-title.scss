@@ -1,25 +1,33 @@
-.Coinblock-summary {
-    font-weight: 500;
-    color: gray;
-    font-weight: bold;
-  
-    .icon {
-        float: left;
-        font-size: 30px;
+.Coin-title {
+    // font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+
+    .card {
+        margin-right: 5%;
     }
 
-    .listTitle{
+    .icon {
         float: left;
-        margin-left: 12px;
+        font-size: 800%;
+    }
+
+    .listContent {
+        margin-top: 0.5%;
+        margin-left: 10%;
     }
 
     .heading{
-        font-size: 16px;
-        color: black;
+       color: black;
+       font-weight: bold;
+       font-size: 120%;
     }
     .description{
-        font-size: 12px;
+        font-size:90%;
         color: #888;
-        margin-top: 0;
+        margin-right: 3%;
+        
     }
 }

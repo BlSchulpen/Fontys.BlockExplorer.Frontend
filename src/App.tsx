@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/home/Home'
-import Currency from './pages/currency/Currency'
+import CoinPage from './pages/coin-page/CoinPage'
 
 function App() {
   const data = 'Data from parent';
@@ -16,13 +16,13 @@ function App() {
           <Route index element={<Home/>} />
         </Route>
         <Route path="/btc">
-          <Route index element={<Currency/>} />
+          <Route index element={<CoinPage/>} />
         </Route>
         <Route path="/bch">
-          <Route index element={<Currency/>} />
+          <Route index element={<CoinPage/>} />
         </Route>
         <Route path="/eth">
-          <Route index element={<Currency/>} />
+          <Route index element={<CoinPage/>} />
         </Route>
       </Routes>
    </BrowserRouter>
